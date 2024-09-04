@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Typed.js</title>
+
+    <!-- Import style.css from root directory -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="heading">
+      <h1>ERS</h1>
+      <h3>
+        <span class="text-slider-items">
+          A computer Science portal for geeks, A place to practice code
+        </span>
+        <strong class="text-slider"></strong>
+      </h3>
+    </div>
+    <!-- Import typed.min.js file from typed.js folder -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Add jquery cdn -->
+    <!-- <script src="C:\Users\nagen\OneDrive\Desktop\Toutorials\ERS\typed\node_modules\jquery\dist\jquery.js"></script> -->
+
+    <!-- Add this script for successful 
+        implementation of typed.js  -->
+    <script>
+    
+    // var typed_strings = $(".text-slider-items").text();
+
+    var typed = new Typed(".text-slider", {
+        strings: ["Electronics and Robotics Society","IIITDMJ"],
+        typeSpeed: 50,
+        loop: true,
+        backDelay: 900,
+        backSpeed: 30,
+    });
+    
+    </script>
+  </body>
+</html>

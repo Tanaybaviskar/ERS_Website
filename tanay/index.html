@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics and Robotics Society</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>>
+</head>
+<body>
+    <div class="header1">
+        <div class="Header">
+            <img src="logo.jpg.jpg" id="logo">
+            <div class="menu-container">
+                <div class="hamburger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                </div>
+                <div id="sideMenu" class="side-menu">
+                    <br><br>
+                    <a href="#">Team</a>
+                    <a href="#">Our Projects</a>
+                    <a href="#">Competitions</a>
+                    <a href="#">Sessions</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">Alumni</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <h1 class="textslider">
+            <span class="text-slider-items">
+            </span>
+            <strong class="text-slider"></strong>
+        </h1>
+        <div class="textbimg">
+            <div class="text-behind">
+                <h1 class="tbehind"><center>ERS</center></h1>
+            </div>
+            <div class="foreground">
+                <img src="robot.png" alt="Robot Image">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".text-slider", {
+        strings: ["Innovate.","Build.","Inspire."],
+        typeSpeed: 80,
+        loop: true,
+        backDelay: 1000,
+        backSpeed: 50,
+        });
+    </script>
+</body>
+</html>
