@@ -1,0 +1,262 @@
+@font-face {
+    font-family: Tomorrow-Regular;
+    src: url("Tomorrow-Regular.ttf");
+
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+body{
+    font-family: Tomorrow-Regular;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+.logolink{
+    display: block;
+}
+#logo{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 117.86372007366482504604051565378px;
+    height: 50px;
+}
+.menu-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 3;
+  }
+  
+.hamburger {
+    width: 30px;
+    cursor: pointer;
+    margin: 20px;
+    margin-right: 50px;
+    transition: transform 0.4s ease;
+}
+
+.hamburger.slide-out {
+    transform: translateX(-180px); /* Move the hamburger icon out of view */
+    z-index: 2;
+}
+
+.hamburger {
+    transform: translateX(0); /* Resets to original position */
+  }
+
+.line {
+    width: 100%;
+    height: 4px;
+    right: 0;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+}
+
+.side-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    z-index: 1;
+}
+
+.side-menu a:hover {
+    color: #f8ba00;
+}
+
+.side-menu.active {
+    width: 250px;
+    opacity: 0.8;
+}
+
+.class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    font-size: 30px;
+}
+
+.text-slider-items {
+    display: none;
+}
+
+.textslider{
+    margin-left: 14%;
+}
+.content{
+    margin-top: 10%;
+    color: #ffbf00;
+}
+
+.textbimg {
+    position: relative;
+    color: transparent;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+
+.text-behind {
+    position: absolute;
+    z-index: -3;
+    font-size: 17vw;
+}
+
+.tbehind{
+    color: black;
+    text-shadow: -2px -2px 0 #f8ba00, 2px -2px 0 rgb(248, 186, 0), -2px 2px 0 #f8ba00, 2px 2px 0 #f8ba00;
+}
+
+.foreground {
+    position: relative;
+    z-index: -2;
+    transform: scale(2.5);
+    padding-top: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.foreground img {
+    max-width: 25vw;
+    margin-right: -30%;
+}
+
+.foreground h2 {
+    font-size: 48px;
+    color: #ff0;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.aboutustitle{
+    color: black;
+    text-shadow: -1px -1px 0 #f8ba00, 1px -1px 0 rgb(248, 186, 0), -1px 1px 0 #f8ba00, 1px 1px 0 #f8ba00;
+    font-size: 60px;
+}
+.about{
+    margin-top: 25%;
+    margin-left: 10%;
+    margin-right: 60%;
+    margin-bottom: 80px;
+    opacity: 0;
+    color: white;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+
+.about.visible {
+    opacity: 1;
+      margin-bottom: 10%;
+      transform: translateY(0);
+}
+
+.footer{
+    height: 5%;
+    margin-bottom: 0px;
+}
+
+.footercontent{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+    margin-bottom: 2%;
+}
+
+.ytlink{
+    height: 2%;
+    width: 2%;
+}
+
+.instalink{
+    height: 2%;
+    width: 2%;
+}
+
+
+.fblink{
+    height: 2%;
+    width: 2%;
+}
+
+
+.gilink{
+    height: 2%;
+    width: 2%;
+}
+
+.lilink{
+    height: 2%;
+    width: 2%;
+}
+
+@media (max-width: 768px) {
+    .Header {
+        padding: 10px;
+    }
+
+    #logo {
+        width: 90px;
+        height: auto;
+    }
+
+    .hamburger {
+        width: 25px;
+        margin-right: 20px;
+    }
+
+    .content {
+        margin-top: 150px;
+        padding: 10px;
+    }
+
+    .aboutustitle {
+        font-size: 6vw;
+    }
+
+    .about {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .textbimg {
+        height: 25vh;
+    }
+
+    .text-behind {
+        font-size: 20vw;
+    }
+}
