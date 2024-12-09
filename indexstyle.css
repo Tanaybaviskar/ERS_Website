@@ -1,12 +1,34 @@
 @font-face {
     font-family: Tomorrow-Regular;
     src: url("Tomorrow-Regular.ttf");
-
 }
 
-.Header{
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* General Body Styles */
+body {
+    font-family: Tomorrow-Regular;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000000;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+.Header {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     padding: 20px;
     background-color: #000000;
@@ -16,29 +38,21 @@
     width: 100%;
     z-index: 10;
 }
-body{
-    font-family: Tomorrow-Regular;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    background-color: #000000;
-}
-.logolink{
-    display: block;
-}
-#logo{
+
+/* Logo and Menu */
+#logo {
     margin-top: 10px;
     margin-left: 10px;
-    width: 117.86372007366482504604051565378px;
+    width: 118px;
     height: 50px;
 }
+
 .menu-container {
-    position: relative;
     display: flex;
     justify-content: flex-end;
     z-index: 3;
-  }
-  
+}
+
 .hamburger {
     width: 30px;
     cursor: pointer;
@@ -54,7 +68,7 @@ body{
 
 .hamburger {
     transform: translateX(0); /* Resets to original position */
-  }
+}
 
 .line {
     width: 100%;
@@ -66,6 +80,7 @@ body{
     transition: 0.4s;
 }
 
+/* Sidebar Menu */
 .side-menu {
     height: 100%;
     width: 0;
@@ -76,6 +91,11 @@ body{
     overflow-x: hidden;
     transition: 0.4s;
     padding-top: 60px;
+}
+
+.side-menu.active {
+    width: 250px;
+    opacity: 0.8;
 }
 
 .side-menu a {
@@ -91,138 +111,73 @@ body{
     color: #f8ba00;
 }
 
-.side-menu.active {
-    width: 250px;
-    opacity: 0.8;
-}
-
-.class{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #fff;
-    font-size: 30px;
-}
-
-.text-slider-items {
-    display: none;
-}
-
-.textslider{
-    margin-left: 14%;
-}
-.content{
+/* Main Content */
+.content {
     margin-top: 10%;
     color: #ffbf00;
 }
 
 .textbimg {
     position: relative;
-    color: transparent;
     width: 100%;
     height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: -1;
 }
-
 
 .text-behind {
     position: absolute;
+    font-size: 10vw;
     z-index: -3;
-    font-size: 17vw;
 }
 
-.tbehind{
+.tbehind {
     color: black;
     text-shadow: -2px -2px 0 #f8ba00, 2px -2px 0 rgb(248, 186, 0), -2px 2px 0 #f8ba00, 2px 2px 0 #f8ba00;
 }
 
-.foreground {
-    position: relative;
-    z-index: -2;
-    transform: scale(2.5);
-    padding-top: 5%;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.foreground img {
-    max-width: 25vw;
-    margin-right: -30%;
-}
-
-.foreground h2 {
-    font-size: 48px;
-    color: #ff0;
-    margin-top: 20px;
-    text-transform: uppercase;
-}
-
-.aboutustitle{
+/* About Section */
+.aboutustitle {
     color: black;
     text-shadow: -1px -1px 0 #f8ba00, 1px -1px 0 rgb(248, 186, 0), -1px 1px 0 #f8ba00, 1px 1px 0 #f8ba00;
-    font-size: 60px;
+    font-size: 8vw;
 }
-.about{
-    margin-top: 25%;
-    margin-left: 10%;
-    margin-right: 60%;
-    margin-bottom: 80px;
-    opacity: 0;
+
+.about {
+    margin: 0 auto;
+    max-width: 80vw;
     color: white;
+    opacity: 0;
     transform: translateY(50px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-
 .about.visible {
     opacity: 1;
-      margin-bottom: 10%;
-      transform: translateY(0);
+    transform: translateY(0);
 }
 
-.footer{
-    height: 5%;
-    margin-bottom: 0px;
+/* Footer */
+.footer {
+    height: 60px;
+    margin: 0;
 }
 
-.footercontent{
+.footercontent {
     display: flex;
     justify-content: space-between;
-    margin: 5%;
-    margin-bottom: 2%;
+    margin: 20px 50px;
 }
 
-.ytlink{
-    height: 2%;
-    width: 2%;
+.footercontent img {
+    width: 20px;
+    height: 20px;
 }
 
-.instalink{
-    height: 2%;
-    width: 2%;
-}
+/* ========== Media Queries for Responsive Design ========== */
 
-
-.fblink{
-    height: 2%;
-    width: 2%;
-}
-
-
-.gilink{
-    height: 2%;
-    width: 2%;
-}
-
-.lilink{
-    height: 2%;
-    width: 2%;
-}
-
+/* Small devices (max-width: 768px) */
 @media (max-width: 768px) {
     .Header {
         padding: 10px;
@@ -253,10 +208,10 @@ body{
     }
 
     .textbimg {
-        height: 25vh;
+        height: 50vh;
     }
 
     .text-behind {
-        font-size: 20vw;
+        font-size: 8vw;
     }
 }

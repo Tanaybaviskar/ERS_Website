@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electronics and Robotics Society</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="gallery.css">
-    <script src="script.js"></script>>
-    <script src="gallery.js"></script>>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
     <div class="header1">
         <div class="Header">
-            <a href="https://www.iiitdmj.ac.in/robotics.iiitdmj.ac.in/" class="logolink">
+            <a href="index.html" class="logolink">
             <img src="logo.jpg.jpg" id="logo">
             </a>
             <div class="menu-container">
@@ -24,7 +21,7 @@
                 <div id="sideMenu" class="side-menu">
                     <br><br>
                     <a href="#">Team</a>
-                    <a href="project.html">Our Projects</a>
+                    <a href="project.html">Projects</a>
                     <a href="competitions.html" style="text-decoration:none">Competitions</a>
                     <a href="#">Sessions</a>
                     <a href="gallery.html">Gallery</a>
@@ -33,94 +30,76 @@
             </div>
         </div>
     </div>
-    
-
-    <div class="gallery">
-        <div class="gallery-item" onclick="openModal(0)" data-title="Moment 1" data-description="This is the description for moment 1">
-            <img src="robot.png" alt="Moment 1">
-        </div>
-        <div class="gallery-item" onclick="openModal(1)" data-title="Moment 2" data-description="This is the description for moment 2">
-            <img src="robot-arm-500x500.webp" alt="Moment 2">
-        </div>
-        <div class="gallery-item" onclick="openModal(2)" data-title="Moment 3" data-description="This is the description for moment 3">
-            <img src="roborush.jpg" alt="Moment 3">
-        </div>
-        <div class="gallery-item" onclick="openModal(0)" data-title="Moment 1" data-description="This is the description for moment 1">
-            <img src="robot.png" alt="Moment 1">
-        </div>
-        <div class="gallery-item" onclick="openModal(1)" data-title="Moment 2" data-description="This is the description for moment 2">
-            <img src="robot-arm-500x500.webp" alt="Moment 2">
-        </div>
-        <div class="gallery-item" onclick="openModal(2)" data-title="Moment 3" data-description="This is the description for moment 3">
-            <img src="roborush.jpg" alt="Moment 3">
-        </div>
-        <div class="gallery-item" onclick="openModal(0)" data-title="Moment 1" data-description="This is the description for moment 1">
-            <img src="robot.png" alt="Moment 1">
-        </div>
-        <div class="gallery-item" onclick="openModal(1)" data-title="Moment 2" data-description="This is the description for moment 2">
-            <img src="robot-arm-500x500.webp" alt="Moment 2">
-        </div>
-        <div class="gallery-item" onclick="openModal(2)" data-title="Moment 3" data-description="This is the description for moment 3">
-            <img src="roborush.jpg" alt="Moment 3">
-        </div>
-        <!-- Add more images as needed -->
+  <div class="content">
+      <div class="gallerytitle">
+        <center><h1>GALLERY</h1></center>
+      </div>
+    <div class="gallery-row">
+      <div class="gallery-item" data-images="roborush.jpg,robot.png,ytlogo.png">
+        <img src="roborush.jpg" alt="Gallery Item 1">
+        <center><div class="gallery-title">OPEN CV</div></center>
+      </div>
+      <div class="gallery-item" data-images="img4.jpg,img5.jpg,img6.jpg">
+        <img src="thumbnail2.jpg" alt="Gallery Item 2">
+        <div class="gallery-title">ROBOTICS</div>
+      </div>
+      <div class="gallery-item empty"></div>
+    <div>
+        <div class="gallery-item empty"></div>
     </div>
-    
-    <!-- Modal for showing the image and description -->
-    <div id="myModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        
-        <!-- Modal Content Wrapper for Image and Text -->
-        <div class="modal-content-wrapper">
-            <!-- Image Display Area -->
-            <img class="modal-content" id="img01" />
-            
-            <!-- Title and Description -->
-            <div class="image-info">
-                <div class="image-title" id="image-title"></div>
-                <div class="image-desc" id="image-desc"></div>
-            </div>
-        </div>
-        
-        <!-- Next/Prev Buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div>
+        <div class="gallery-item empty"></div>
     </div>
-    
-    
-    
+    </div>
+    <div class="gallery-row">
+      <div class="gallery-item empty"></div>
+      <div class="gallery-item empty"></div>
+      <div class="gallery-item empty"></div>
+    </div>
+  </div>
 
+  <!-- Modal -->
+  <div class="modal" id="gallery-modal">
+    <span class="close">&times;</span>
+    <div class="modal-slideshow">
+      <button class="prev">&#10094;</button>
+      <img class="slide" src="" alt="Gallery Image">
+      <button class="next">&#10095;</button>
+    </div>
+  </div>
 
-
-    <div class="footer">
-        <div class="footercontent">
-            <span>
-                <a href="https://www.youtube.com/channel/UCPY8rVtrR8cCqb3jmMtek4w" class="ytlink" target="_blank">
-                    <img src="ytlogo.png" id="ytlogo" height="30px" width="42.607489597780859916782246879334px">
-                </a>
-            </span>
-            <span>
-                <a href="https://www.instagram.com/ers_iiitdmj/" class="instalink" target="_blank">
-                <img src="instalogo.jpg" id="instalogo" height="30px" width="30px">
-                </a>
-            </span>
-            <span>
-                <a href="https://www.facebook.com/ers.iiitdmj/" class="fblink" target="_blank">
-                <img src="fblogo.png" id="fblogo" height="30px" width="30px">
-                </a>
-            </span>
-            <span>
-                <a href="https://github.com/ERS-IIITJ" class="ghlink" target="_blank">
-                    <img src="githublogo.png" id="ghlogo" height="35px" width="35px">
-                </a>
-            </span>
-            <span>
-                <a href="https://www.linkedin.com/company/robotics-electronics-club-iiitdmj/" class="lilink" target="_blank">
-                    <img src="linkedinlogo.jpg" id="lilogo" height="25px" width="25px">
-                </a>
-            </span>
-        </div>
+  <div class="footer">
+    <div class="footercontent">
+        <footer>
+        <span>
+            <a href="https://www.youtube.com/channel/UCPY8rVtrR8cCqb3jmMtek4w" class="ytlink" target="_blank">
+                <img src="ytlogo.png" id="ytlogo" height="30px" width="42.607489597780859916782246879334px">
+            </a>
+        </span>
+        <span>
+            <a href="https://www.instagram.com/ers_iiitdmj/" class="instalink" target="_blank">
+            <img src="instalogo.jpg" id="instalogo" height="30px" width="30px">
+            </a>
+        </span>
+        <span>
+            <a href="https://www.facebook.com/ers.iiitdmj/" class="fblink" target="_blank">
+            <img src="fblogo.png" id="fblogo" height="30px" width="30px">
+            </a>
+        </span>
+        <span>
+            <a href="https://github.com/ERS-IIITJ" class="ghlink" target="_blank">
+                <img src="githublogo.png" id="ghlogo" height="35px" width="35px">
+            </a>
+        </span>
+        <span>
+            <a href="https://www.linkedin.com/company/robotics-electronics-club-iiitdmj/" class="lilink" target="_blank">
+                <img src="linkedinlogo.jpg" id="lilogo" height="25px" width="25px">
+            </a>
+        </span>
+    </footer>
+    </div>
     </div>
 
+  <script src="gallery.js"></script>
 </body>
 </html>

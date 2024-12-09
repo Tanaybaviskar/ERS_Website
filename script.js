@@ -20,3 +20,8 @@ document.addEventListener('scroll', function() {
       hiddenDiv.classList.add('visible');
     }
   });
+
+
+
+
+  
