@@ -1,0 +1,360 @@
+/* General body styling */
+@font-face {
+    font-family: Tomorrow-Regular;
+    src: url("Tomorrow-Regular.ttf");
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.Header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+body {
+    font-family: Tomorrow-Regular;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #000000;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.logolink {
+    display: block;
+}
+
+#logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 118px;
+    height: 50px;
+}
+
+.menu-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 3;
+}
+
+.hamburger {
+    width: 30px;
+    cursor: pointer;
+    margin: 20px;
+    margin-right: 50px;
+    transition: transform 0.4s ease;
+}
+
+.hamburger.slide-out {
+    transform: translateX(-180px); /* Move the hamburger icon out of view */
+    z-index: 2;
+}
+
+.hamburger {
+    transform: translateX(0); /* Resets to original position */
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    right: 0;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+}
+.detailspic{
+    color: #fff;
+}
+.detailspic p{
+    color: grey;
+}
+.competitionstitle {
+    color: black;
+    text-shadow: -1px -1px 0 #f8ba00, 1px -1px 0 rgb(248, 186, 0), -1px 1px 0 #f8ba00, 1px 1px 0 #f8ba00;
+    font-size: 50px;
+    width: 100%;
+    margin-top: 100px;
+}
+.side-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    z-index: 1;
+}
+
+.side-menu a:hover {
+    color: #f8ba00;
+}
+
+.side-menu.active {
+    width: 250px;
+    opacity: 0.8;
+}
+  
+  /* Profile container and image */
+  .profile-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-origin: top left;
+  }
+  .profile-container2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-origin: top left;
+  }
+  
+  /* Image styling */
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Social icons container */
+  .social-icons {
+    position: absolute;
+    bottom: 40px;
+    left: 40%;
+    transform: translateX(-37%);
+    display: flex;
+    gap: 10px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Social icon links */
+  .social-icons a {
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect on the image */
+  .profile-image img:hover {
+    opacity: 0.5; /* Image becomes translucent */
+  }
+  
+  /* Social icons become visible when hovering over the image */
+  .profile-container:hover .social-icons {
+    opacity: 1; /* Social icons become visible */
+  }
+  .social-icons a:hover .profile-container {
+    opacity: 0; /* Social icons become visible */
+  }
+  .profile-container2:hover .social-icons {
+    opacity: 1; /* Social icons become visible */
+  }
+  .social-icons a:hover .profile-container2 {
+    opacity: 0; /* Social icons become visible */
+  }
+  
+  .social-icons a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  /* Social media icons */
+
+  
+  .profilepic1{
+    display: flex;
+    justify-content: center;
+    gap: 30vh;
+  }
+  .profilepic2{
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+  }
+  /* General styling for the profile container and image */
+.profile-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.profile-container2{
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Social icons container */
+.social-icons {
+  position: absolute;
+  bottom: 40px;
+  left: 40%;
+  transform: translateX(-37%);
+  display: flex;
+  gap: 10px;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Social icon links */
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+/* Image becomes translucent when hovering */
+.profile-container:hover .profile-image img {
+  opacity: 0.5;
+}
+
+/* Social icons become visible when hovering over the container */
+.profile-container:hover .social-icons {
+  opacity: 1;
+}
+
+/* Hover effect on social icons */
+.social-icons a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.big-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures child divs wrap in smaller screens */
+  gap: 20px;
+}
+.-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensures child divs wrap in smaller screens */
+  gap: 20px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10%;
+}
+
+.ytlink, .instalink, .fblink, .gilink, .lilink {
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 1025px) {
+  .Header {
+      padding: 0;
+  }
+
+  #logo {
+      width: 90px;
+      height: 40px;
+  }
+
+  .hamburger {
+      width: 25px;
+      margin-right: 20px;
+  }
+
+  .competitionstitle {
+      font-size: 6vw;
+  }
+
+  .robotitle {
+      margin-top: 10vw;
+      margin-left: 2%;
+      font-size: 6vw;
+  }
+
+  .sidebar {
+      font-size: 28px;
+      width: 10%;
+      height: auto;
+  }
+  
+  footer {
+      margin-top: 10%;
+  }
+  .big-div{
+    .profilepic1{
+      gap: 50px;
+      width: 35%;
+      font-size: 10px; 
+    }
+    .profilepic2{
+      gap: 10%;
+      width: 35%;
+      font-size: 10px; 
+    }
+  }
+  .profile-container{
+    height: 50%;
+  }
+  
+}

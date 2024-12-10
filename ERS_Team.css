@@ -1,0 +1,320 @@
+@font-face {
+    font-family: Tomorrow-Regular;
+    src: url("Tomorrow-Regular.ttf");
+}
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.Header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Tomorrow-Regular;
+
+  }
+  
+  .team-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+  }
+  
+  .team-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  
+  .team-member {
+    text-align: center;
+    width: 200px;
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .icon.linkedin {
+    background-image: url('linkedin-icon.png');
+  }
+  
+  .icon.github {
+    background-image: url('github-icon.png');
+  }
+  
+  .icon.instagram {
+    background-image: url('instagram-icon.png');
+  }
+  
+  .image-container:hover .social-icons {
+    opacity: 1;
+  }
+  @font-face {
+    font-family: Tomorrow-Regular;
+    src: url("Tomorrow-Regular.ttf");
+}
+
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.Header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+
+
+.logolink {
+    display: block;
+}
+
+#logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 118px;
+    height: 50px;
+}
+
+.menu-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 3;
+}
+
+.hamburger {
+    width: 30px;
+    cursor: pointer;
+    margin: 20px;
+    margin-right: 50px;
+    transition: transform 0.4s ease;
+}
+
+.hamburger.slide-out {
+    transform: translateX(-180px); /* Move the hamburger icon out of view */
+    z-index: 2;
+}
+
+.hamburger {
+    transform: translateX(0); /* Resets to original position */
+}
+
+.line {
+    width: 100%;
+    height: 4px;
+    right: 0;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+}
+.detailspic{
+    color: #fff;
+}
+.detailspic p{
+    color: grey;
+}
+.competitionstitle {
+    color: black;
+    text-shadow: -1px -1px 0 #f8ba00, 1px -1px 0 rgb(248, 186, 0), -1px 1px 0 #f8ba00, 1px 1px 0 #f8ba00;
+    font-size: 50px;
+    width: 100%;
+    margin-top: 100px;
+}
+.side-menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    z-index: 1;
+}
+
+.side-menu a:hover {
+    color: #f8ba00;
+}
+
+.side-menu.active {
+    width: 250px;
+    opacity: 0.8;
+}  
+.image-container:hover img {
+    opacity: 0.7;
+  }
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #f8ba00; /* Change color on hover */
+  }
+  .competitionstitle {
+    color: black;
+    text-shadow: -1px -1px 0 #f8ba00, 1px -1px 0 rgb(248, 186, 0), -1px 1px 0 #f8ba00, 1px 1px 0 #f8ba00;
+    font-size: 50px;
+    width: 100%;
+    margin-top: 100px;
+}
+@media (max-width: 1025px) {
+    .Header {
+        padding: 0;
+    }
+
+    #logo {
+        width: 90px;
+        height: 40px;
+    }
+
+    .hamburger {
+        width: 25px;
+        margin-right: 20px;
+    }
+
+    .competitionstitle {
+        font-size: 6vw;
+    }
+
+    .robotitle {
+        margin-top: 10vw;
+        margin-left: 2%;
+        font-size: 6vw;
+    }
+
+    .sidebar {
+        font-size: 28px;
+        width: 10%;
+        height: auto;
+    }
+
+    .ROBORUSH {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        align-items: center; /* Centers both horizontally and vertically */
+        height: auto;
+        width: 100%;
+    }
+
+    .roborushimg {
+        width: 90%; /* Adjust image width for smaller screens */
+        height: auto;
+    }
+
+    .ROBOtop {
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+
+    .robocontent{
+        font-size: 4vw;
+    }
+
+    .roborushcontent {
+        width: 90%;
+        text-align: center; /* Center the text in smaller screens */
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+    .register{
+        font-size: 5vw;
+    }
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.ytlink, .instalink, .fblink, .gilink, .lilink {
+    height: 20px;
+    width: 20px;
+}
+.content {
+    margin-top: 15%;
+    color: #ffbf00;
+}
+
