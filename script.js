@@ -16,7 +16,7 @@ document.addEventListener('scroll', function() {
     const rect = hiddenDiv.getBoundingClientRect();
 
     // Check if the element is in the viewport
-    if (rect.top < 500 && rect.bottom > 0) {
+    if (rect.top < 750 && rect.bottom > 0) {
       hiddenDiv.classList.add('visible');
     }
   });
