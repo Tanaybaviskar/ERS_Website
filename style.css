@@ -225,7 +225,7 @@ body{
     width: 2%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
     .Header {
         padding: 10px;
     }
