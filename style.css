@@ -133,6 +133,7 @@ body{
 .text-behind {
     position: absolute;
     z-index: -3;
+    margin-top: 5%;
     font-size: 17vw;
 }
 
@@ -255,6 +256,7 @@ body{
 
     .textbimg {
         height: 25vh;
+        margin-top: 10%;
     }
 
     .text-behind {
