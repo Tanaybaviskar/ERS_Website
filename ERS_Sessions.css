@@ -279,6 +279,7 @@ footer {
     }
 }
 
+
 .footer-divider {
     width: 80%; /* Adjust the width */
     border: 0.5px solid #444; /* Thin line with dark gray */
@@ -320,4 +321,3 @@ footer {
         gap: 20px; /* Adjust gap for smaller screens */
     }
 }
-
