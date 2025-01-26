@@ -318,3 +318,45 @@ footer {
     color: #ffbf00;
 }
 
+.footer-divider {
+    width: 80%; /* Adjust the width */
+    border: 0.5px solid #444; /* Thin line with dark gray */
+    margin: 10px 0;
+}
+
+.credits {
+    font-size: 14px;
+    color: #ccc; /* Light gray for text */
+    line-height: 1.5; /* Improve readability */
+    text-decoration: none;
+}
+
+.credits strong {
+    color: #f9a825; /* Highlight developer names */
+}
+
+.credits p {
+    margin: 5px 0;
+    text-align: center;
+    
+}
+.credits a{
+    
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .social-links img {
+        height: 25px; /* Smaller icons */
+    }
+
+    .credits {
+        font-size: 12px; /* Smaller font for smaller screens */
+    }
+
+    .social-links {
+        gap: 20px; /* Adjust gap for smaller screens */
+    }
+}
+
