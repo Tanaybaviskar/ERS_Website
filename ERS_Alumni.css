@@ -301,22 +301,6 @@ html{
         font-size: 5vw;
     }
 }
-footer {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-}
-
-.ytlink, .instalink, .fblink, .gilink, .lilink {
-    height: 20px;
-    width: 20px;
-}
-.content {
-    margin-top: 15%;
-    color: #ffbf00;
-}
 
 .footer-divider {
     width: 80%; /* Adjust the width */
@@ -359,4 +343,3 @@ footer {
         gap: 20px; /* Adjust gap for smaller screens */
     }
 }
-
