@@ -235,6 +235,20 @@ html{
     width: 100%;
     margin-top: 100px;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.ytlink, .instalink, .fblink, .gilink, .lilink {
+    height: 20px;
+    width: 20px;
+}
+
 @media (max-width: 1025px) {
     .Header {
         padding: 0;
