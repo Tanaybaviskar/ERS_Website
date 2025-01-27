@@ -281,7 +281,7 @@ footer {
 
 
 .footer-divider {
-    width: 80%; /* Adjust the width */
+    
     border: 0.5px solid #444; /* Thin line with dark gray */
     margin: 10px 0;
 }
@@ -321,3 +321,29 @@ footer {
         gap: 20px; /* Adjust gap for smaller screens */
     }
 }
+.event-report-button {
+    display: inline-block; /* Makes it behave like a button */
+    padding: 10px 20px; /* Adds spacing inside the button */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    color: white; /* Text color */
+    background-color: black; /* Blue background */
+    text-decoration: none; /* Removes underline */
+     /* Makes the button rounded */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    transition: background-color 0.4s ease, transform 0.2s ease; /* Smooth transitions */
+  }
+  
+  /* Hover Effect */
+  .event-report-button:hover {
+    background-color: #f8ba00; /* Darker blue on hover */
+    transform: translateY(-2px); /* Moves the button slightly upward */
+    color: #000000;
+  }
+  
+  /* Focus Effect */
+  .event-report-button:focus {
+    outline: none; /* Removes the default focus outline */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Adds a glow effect */
+  }
+   
