@@ -303,7 +303,8 @@ html{
 }
 footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap:7%;
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 5%;
