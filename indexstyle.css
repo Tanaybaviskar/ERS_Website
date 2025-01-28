@@ -215,7 +215,88 @@ body {
         font-size: 8vw;
     }
 }
+media (max-width: 1025px) {
+    .Header {
+        padding: 0;
+    }
 
+    #logo {
+        width: 90px;
+        height: 40px;
+    }
+
+    .hamburger {
+        width: 25px;
+        margin-right: 20px;
+    }
+
+    .competitionstitle {
+        font-size: 6vw;
+    }
+
+    .robotitle {
+        margin-top: 10vw;
+        margin-left: 2%;
+        font-size: 6vw;
+    }
+
+    .sidebar {
+        font-size: 28px;
+        width: 10%;
+        height: auto;
+    }
+
+    .ROBORUSH {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        align-items: center; /* Centers both horizontally and vertically */
+        height: auto;
+        width: 100%;
+    }
+
+    .roborushimg {
+        width: 90%; /* Adjust image width for smaller screens */
+        height: auto;
+    }
+
+    .ROBOtop {
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+
+    .robocontent{
+        font-size: 4vw;
+    }
+
+    .roborushcontent {
+        width: 90%;
+        text-align: center; /* Center the text in smaller screens */
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+    .register{
+        font-size: 5vw;
+    }
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.ytlink, .instalink, .fblink, .gilink, .lilink {
+    height: 20px;
+    width: 20px;
+}
+.content {
+    margin-top: 15%;
+    color: #ffbf00;
+}
 .footer-divider {
     
     border: 0.5px solid #444; /* Thin line with dark gray */
