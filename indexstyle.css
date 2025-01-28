@@ -215,6 +215,91 @@ body {
         font-size: 8vw;
     }
 }
+.image-container:hover img {
+    opacity: 0.7;
+  }
+  .social-icons a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #f8ba00; /* Change color on hover */
+  }
+  .competitionstitle {
+    color: black;
+    text-shadow: -1px -1px 0 #f8ba00, 1px -1px 0 rgb(248, 186, 0), -1px 1px 0 #f8ba00, 1px 1px 0 #f8ba00;
+    font-size: 50px;
+    width: 100%;
+    margin-top: 100px;
+}
+@media (max-width: 1025px) {
+    .Header {
+        padding: 0;
+    }
+
+    #logo {
+        width: 90px;
+        height: 40px;
+    }
+
+    .hamburger {
+        width: 25px;
+        margin-right: 20px;
+    }
+
+    .competitionstitle {
+        font-size: 6vw;
+    }
+
+    .robotitle {
+        margin-top: 10vw;
+        margin-left: 2%;
+        font-size: 6vw;
+    }
+
+    .sidebar {
+        font-size: 28px;
+        width: 10%;
+        height: auto;
+    }
+
+    .ROBORUSH {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        align-items: center; /* Centers both horizontally and vertically */
+        height: auto;
+        width: 100%;
+    }
+
+    .roborushimg {
+        width: 90%; /* Adjust image width for smaller screens */
+        height: auto;
+    }
+
+    .ROBOtop {
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+
+    .robocontent{
+        font-size: 4vw;
+    }
+
+    .roborushcontent {
+        width: 90%;
+        text-align: center; /* Center the text in smaller screens */
+    }
+
+    footer {
+        margin-top: 10%;
+    }
+    .register{
+        font-size: 5vw;
+    }
+}
 footer {
     display: flex;
     justify-content: space-between;
